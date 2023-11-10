@@ -12,6 +12,7 @@
     "node": "16 || 18 || 20"
   },
   "scripts": {
+    "dev": "tsc --target ES5 --experimentalDecorators app.ts && node app.js",
     "build": "lb-tsc",
     "build:watch": "lb-tsc --watch",
     "lint": "npm run eslint && npm run prettier:check",
