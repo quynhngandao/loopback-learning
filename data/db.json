@@ -1,0 +1,12 @@
+{
+  "ids": {
+    "Product": 7
+  },
+  "models": {
+    "Product": {
+      "1": "{\"id\":1,\"title\":\"learn node\",\"qty\":1,\"price\":10}",
+      "2": "{\"id\":2,\"title\":\"learn react\",\"qty\":1,\"price\":100}",
+      "5": "{\"id\":5,\"title\":\"learn node\",\"qty\":1,\"price\":10}"
+    }
+  }
+}
