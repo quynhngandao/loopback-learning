@@ -2,7 +2,7 @@ import {inject, lifeCycleObserver, LifeCycleObserver} from '@loopback/core';
 import {juggler} from '@loopback/repository';
 
 const config = {
-  name: 'Mysql',
+  name: 'mySQL',
   connector: 'mysql',
   url: '',
   host: '127.0.0.1',
@@ -17,13 +17,13 @@ const config = {
 // gracefully. The `stop()` method is inherited from `juggler.DataSource`.
 // Learn more at https://loopback.io/doc/en/lb4/Life-cycle.html
 @lifeCycleObserver('datasource')
-export class MysqlDataSource extends juggler.DataSource
+export class MySqlDataSource extends juggler.DataSource
   implements LifeCycleObserver {
-  static dataSourceName = 'Mysql';
+  static dataSourceName = 'mySQL';
   static readonly defaultConfig = config;
 
   constructor(
-    @inject('datasources.config.Mysql', {optional: true})
+    @inject('datasources.config.mySQL', {optional: true})
     dsConfig: object = config,
   ) {
     super(dsConfig);
