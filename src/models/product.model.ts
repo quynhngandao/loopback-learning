@@ -5,9 +5,10 @@ export class Product extends Entity {
   @property({
     type: 'number',
     id: true,
-    generated: true,
+    generated: false,
+    required: true,
   })
-  id?: number;
+  id: number;
 
   @property({
     type: 'string',
